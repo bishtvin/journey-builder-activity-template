@@ -1,74 +1,74 @@
 {
-    "workflowApiVersion": "1.1",
-    "metaData": {
-        "icon": "images/icon.png",
-        "iconSmall": "images/iconSmall.png",
-        "category": "message"
-    },
-    "type": "REST",
-    "lang": {
-        "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
-          "step1Label": "Configure Activity"
-        }
-    },
-    "arguments": {
-        "execute": {
-           "inArguments":[
-				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
-                }									
-			],
-          "outArguments": [],
-          "url": "https://https://test-app-mc-jb-customevent.herokuapp.com/journeybuilder/execute",
-           "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 10000
-        }
-    },
-    "configurationArguments": {
-      "applicationExtensionKey": "8e1d1322-08a7-45b2-b027-21f619b1b477",
-      "save": {
-        "url": "https://https://test-app-mc-jb-customevent.herokuapp.com/journeybuilder/save",
-          "verb": "POST",
-        "useJwt": true
-       },
-       "publish": {
-        "url": "https://https://test-app-mc-jb-customevent.herokuapp.com/journeybuilder/publish",
-           "verb": "POST",
-        "useJwt": true
-       },
-      "stop": {
-        "url": "https://https://test-app-mc-jb-customevent.herokuapp.com/journeybuilder/stop",
-           "verb": "POST",
-        "useJwt": true
-      },
-      "validate": {
-        "url": "https://https://test-app-mc-jb-customevent.herokuapp.com/journeybuilder/validate",
-        "verb": "POST",
-        "useJwt": true
+  "workflowApiVersion": "1.1",
+  "metaData": {
+      "icon": "images/icon.png",
+      "iconSmall": "images/iconSmall.png",
+      "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+      "en-US": {
+          "name": "Template",
+        "description": "A Template for a custom Journey Builder activity",
+        "step1Label": "Configure Activity"
       }
-    },
-    "wizardSteps": [
-        { "label": "Configure Activity", "key": "step1" }
+  },
+  "arguments": {
+      "execute": {
+         "inArguments":[
+      {
+                  "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+              }									
     ],
-    "userInterfaces": {
-        "configModal": {
-            "height": 400,
-            "width": 1000,
-          "fullscreen": false
-        }
+        "outArguments": [],
+        "url": "https://custom-jb-app-demo/journeybuilder/execute",
+         "verb": "POST",
+          "body": "",
+          "header": "",
+          "format": "json",
+          "useJwt": true,
+          "timeout": 10000
+      }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "8439ead9-07ec-4b98-bf1e-06ac524ef6e6",
+    "save": {
+      "url": "https://custom-jb-app-demo/journeybuilder/save",
+        "verb": "POST",
+      "useJwt": true
+     },
+     "publish": {
+      "url": "https://custom-jb-app-demo/journeybuilder/publish",
+         "verb": "POST",
+      "useJwt": true
+     },
+    "stop": {
+      "url": "https://custom-jb-app-demo/journeybuilder/stop",
+         "verb": "POST",
+      "useJwt": true
     },
-    "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [],
-                "outArguments": []
-            }
-        }
+    "validate": {
+      "url": "https://custom-jb-app-demo/journeybuilder/validate",
+      "verb": "POST",
+      "useJwt": true
     }
+  },
+  "wizardSteps": [
+      { "label": "Configure Activity", "key": "step1" }
+  ],
+  "userInterfaces": {
+      "configModal": {
+          "height": 400,
+          "width": 1000,
+        "fullscreen": false
+      }
+  },
+  "schema": {
+      "arguments": {
+          "execute": {
+              "inArguments": [],
+              "outArguments": []
+          }
+      }
+  }
 }
