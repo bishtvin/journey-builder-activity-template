@@ -1,16 +1,12 @@
 {
-  "name": "jb-activity-template",
+  "name": "custom-jb-app-demo",
   "version": "1.0.0",
   "description": "Journey Builder Activity Template",
   "engines": {
-    "node": "6.11.1"
+    "node": "12.16.1"
   },
   "scripts": {
     "start": "node app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devsutd/journey-builder-activity-template.git"
   },
   "keywords": [
     "journey",
@@ -21,9 +17,9 @@
   "author": "Devs United",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devsutd/journey-builder-activity-template/issues"
+    "url": "https://github.com/bishtvin/journey-builder-activity-template/issues"
   },
-  "homepage": "https://github.com/devsutd/journey-builder-activity-template#readme",
+  "homepage": "https://github.com/bishtvin/journey-builder-activity-template#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "bower": "^1.8.0",
